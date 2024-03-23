@@ -1,3 +1,7 @@
 export default function Exfunc() {
-  return <h1>Hello world</h1>;
+  return (
+    <div>
+      <h1></h1>
+    </div>
+  );
 }
