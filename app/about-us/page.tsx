@@ -1,12 +1,10 @@
-import Avartar from "./components/avartar";
+import Navigation from "../../components/navigation";
 
 export default function AboutUs() {
   return (
     <div>
-      <h1>
-        About Me
-        <Avartar />{" "}
-      </h1>
+      <h1>About Me</h1>
+      <Navigation />
     </div>
   );
 }
