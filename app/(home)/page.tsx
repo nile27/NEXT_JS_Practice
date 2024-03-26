@@ -2,10 +2,14 @@ export const metadata = {
   title: "Home ",
 };
 
-export default function Exfunc() {
-  return (
-    <div>
-      <h1>Hello!</h1>
-    </div>
-  );
+const url = "https://nomad-movies.nomadcoders.workers.dev/movies";
+
+async function getMovies() {
+  const res = await fetch(url);
+  const json = await res.json();
+  return json;
+}
+export default async function HomePage() {
+  const movies = await getMovies();
+  return <div>{JSON.stringify(movies)}</div>;
 }
