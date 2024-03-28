@@ -1,4 +1,4 @@
-import { API_url } from "../app/(home)/page";
+import { API_url } from "../app/constants";
 import styles from "../styles/movie-videos.module.css";
 
 async function getVideos(id: string) {
